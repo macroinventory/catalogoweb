@@ -1966,10 +1966,10 @@ const handleInfiniteScroll = () => {
     //  window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
 
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      const scrolled = window.scrollY;
+      const scrolled = window.scrollY+300;
 
 
-    var endOfPage = Math.ceil(scrolled) === scrollable;
+    var endOfPage = Math.ceil(scrolled) >= scrollable;
 
     //<stop when searching>
     let inp = document.getElementById('myInput').value;
