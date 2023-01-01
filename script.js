@@ -962,7 +962,7 @@
   {
    "code": 193,
    "article": "Pigmento Pequeño",
-   "price": 1.8900000000000001
+   "price": 1.89
   },
   {
    "code": 194,
@@ -1861,7 +1861,7 @@ const createCard = (index) => {
   card.className = "w3-quarter";
   ima.src = `\THUMBNAILS\\${index}.jpg`;
   ima.classList.add("img-art");
-  ima.loading = "lazy";
+  ima.loading = "eager";
   card.style.backgroundColor = getRandomColor();
 
   btwa.innerHTML = "Consulte en Whatsapp <img src='FOTOS\\waSVG.svg' class='wai'>";
