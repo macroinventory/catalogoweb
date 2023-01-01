@@ -1861,7 +1861,6 @@ const createCard = (index) => {
   card.className = "w3-quarter";
   ima.src = `\THUMBNAILS\\${index}.jpg`;
   ima.classList.add("img-art");
-  ima.loading = "eager";
   card.style.backgroundColor = getRandomColor();
 
   btwa.innerHTML = "Consulte en Whatsapp <img src='FOTOS\\waSVG.svg' class='wai'>";
