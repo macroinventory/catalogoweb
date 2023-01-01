@@ -1798,76 +1798,6 @@
    "code": 360,
    "article": "Pestañas Nagaraku mixtas 015c y 015D",
    "price": 1.8199999999999998
-  },
-  {
-   "code": 361,
-   "article": "Detergente pestañas funmix",
-   "price": 4.49
-  },
-  {
-   "code": 362,
-   "article": "Esmalte semipermanentes 1 paso",
-   "price": 2.6
-  },
-  {
-   "code": 363,
-   "article": "Cepillo Brossage",
-   "price": 7.8
-  },
-  {
-   "code": 364,
-   "article": "Espelo led com aumento",
-   "price": 16.9
-  },
-  {
-   "code": 365,
-   "article": "Crema exfoliante 500ml",
-   "price": 6.5
-  },
-  {
-   "code": 366,
-   "article": "Piedras Sharosky brilla en la oscuridad 1440pza Surt",
-   "price": 5.2
-  },
-  {
-   "code": 367,
-   "article": "Paleta peeling Ultrasonico",
-   "price": 26
-  },
-  {
-   "code": 368,
-   "article": "Termometro Infrarrojo",
-   "price": 39
-  },
-  {
-   "code": 369,
-   "article": "Esterilizador llaves telef etc",
-   "price": 58.5
-  },
-  {
-   "code": 370,
-   "article": "Esterilizador llaves tlf etc",
-   "price": 65
-  },
-  {
-   "code": 371,
-   "article": "Pega Pestañas pelo a pelo SKY",
-   "price": 13
-  },
-  {
-   "code": 372,
-   "article": "Monomero M&Y 25ltr ",
-   "price": 195
-  },
-  {
-   "code": 373,
-   "article": "Esmaltes semipermanentes Lapiz 1 solo paso",
-   "price": 2.34
-  },
-  {
-   "code": 374,
-   "article": "Esponjas faciales ",
-   "price": 0.52
   }
  ];
 
@@ -1882,7 +1812,7 @@ const loader = document.getElementById("loader");
 const inputr = document.getElementById("myInput");
 
 
-const cardLimit = 360;
+const cardLimit = invent.length;
 const cardIncrease = 8;
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
@@ -1931,6 +1861,7 @@ const createCard = (index) => {
   card.className = "w3-quarter";
   ima.src = `\THUMBNAILS\\${index}.jpg`;
   ima.classList.add("img-art");
+  ima.loading = "lazy";
   card.style.backgroundColor = getRandomColor();
 
   btwa.innerHTML = "Consulte en Whatsapp <img src='FOTOS\\waSVG.svg' class='wai'>";
