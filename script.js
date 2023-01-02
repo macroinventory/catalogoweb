@@ -1,4 +1,4 @@
-﻿const invent = [
+const invent = [
   {
    "code": 1,
    "article": "Aceite para Cutícula",
@@ -17,7 +17,7 @@
   {
    "code": 4,
    "article": "Acido Hialuronico para el rostro",
-   "price": 4
+   "price": 4.00
   },
   {
    "code": 5,
@@ -52,7 +52,7 @@
   {
    "code": 11,
    "article": "Agujas microblading x12",
-   "price": 5.2
+   "price": 5.20
   },
   {
    "code": 12,
@@ -72,12 +72,12 @@
   {
    "code": 15,
    "article": "Anetesia tktx",
-   "price": 3.2
+   "price": 3.20
   },
   {
    "code": 16,
    "article": "Anillo para pega Cristal",
-   "price": 1.9100000000000001
+   "price": 1.91
   },
   {
    "code": 17,
@@ -102,12 +102,12 @@
   {
    "code": 21,
    "article": "Aros Led selfie",
-   "price": 3.2
+   "price": 3.20
   },
   {
    "code": 22,
    "article": "Aspiradora Polvo Uñas 4 en 1",
-   "price": 84.5
+   "price": 84.50
   },
   {
    "code": 23,
@@ -127,7 +127,7 @@
   {
    "code": 26,
    "article": "Base Coat Finish Gel M&Y",
-   "price": 1.5
+   "price": 1.50
   },
   {
    "code": 27,
@@ -167,7 +167,7 @@
   {
    "code": 34,
    "article": "Calentador Roll On ",
-   "price": 3.9
+   "price": 3.90
   },
   {
    "code": 35,
@@ -242,7 +242,7 @@
   {
    "code": 49,
    "article": "Cintillo colocar pestañas",
-   "price": 5.3
+   "price": 5.30
   },
   {
    "code": 50,
@@ -282,7 +282,7 @@
   {
    "code": 57,
    "article": "Dermográfo Azul ",
-   "price": 35.1
+   "price": 35.10
   },
   {
    "code": 58,
@@ -317,7 +317,7 @@
   {
    "code": 64,
    "article": "Dermapen Dr pen ",
-   "price": 59.5
+   "price": 59.50
   },
   {
    "code": 65,
@@ -327,12 +327,12 @@
   {
    "code": 66,
    "article": "Dermografo con Pantalla Primcess",
-   "price": 107.9
+   "price": 107.90
   },
   {
    "code": 67,
    "article": "Dremel 30000",
-   "price": 29.8
+   "price": 29.80
   },
   {
    "code": 68,
@@ -352,7 +352,7 @@
   {
    "code": 71,
    "article": "Dremel Mercedes 2000",
-   "price": 11.7
+   "price": 11.70
   },
   {
    "code": 72,
@@ -397,7 +397,7 @@
   {
    "code": 80,
    "article": "Esterilizador pinzas peluqueria",
-   "price": 14.9
+   "price": 14.90
   },
   {
    "code": 81,
@@ -442,17 +442,17 @@
   {
    "code": 89,
    "article": "Gorros x 100 pzas",
-   "price": 5.9399999999999995
+   "price": 5.93
   },
   {
    "code": 90,
    "article": "Guantes negros  fuxias x 100  S,M,L",
-   "price": 19.5
+   "price": 19.50
   },
   {
    "code": 91,
    "article": "Hojillas Dorco  x10 pzas",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 92,
@@ -502,7 +502,7 @@
   {
    "code": 101,
    "article": "Lampara pedestal con lupa",
-   "price": 78
+   "price": 78.00
   },
   {
    "code": 102,
@@ -547,17 +547,17 @@
   {
    "code": 110,
    "article": "Lampara Uñas sun MAX 120w",
-   "price": 19.5
+   "price": 19.50
   },
   {
    "code": 111,
    "article": "Lamparas SUN mini LED",
-   "price": 2.6
+   "price": 2.60
   },
   {
    "code": 112,
    "article": "Lapiz ceja visajismo",
-   "price": 0.7
+   "price": 0.70
   },
   {
    "code": 113,
@@ -572,7 +572,7 @@
   {
    "code": 115,
    "article": "Lapiz efecto microblading",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 116,
@@ -622,7 +622,7 @@
   {
    "code": 125,
    "article": "Lampara sun x5 54w",
-   "price": 16.9
+   "price": 16.90
   },
   {
    "code": 126,
@@ -637,7 +637,7 @@
   {
    "code": 128,
    "article": "Marcador  Quirurgico",
-   "price": 2
+   "price": 2.00
   },
   {
    "code": 129,
@@ -687,22 +687,22 @@
   {
    "code": 138,
    "article": "Mesoterapia Presurizada Thesera",
-   "price": 52
+   "price": 52.00
   },
   {
    "code": 139,
    "article": "Micro Brush  x 100pzas ",
-   "price": 1.8199999999999998
+   "price": 1.81
   },
   {
    "code": 140,
    "article": "Microdermoabrasion portatil VERDE",
-   "price": 45.5
+   "price": 45.50
   },
   {
    "code": 141,
    "article": "MICRODERMOABRASION MORADA ",
-   "price": 65
+   "price": 65.00
   },
   {
    "code": 142,
@@ -712,7 +712,7 @@
   {
    "code": 143,
    "article": "Molde Plantillas para cejas ",
-   "price": 1.3900000000000001
+   "price": 1.39
   },
   {
    "code": 144,
@@ -742,7 +742,7 @@
   {
    "code": 149,
    "article": "Olla parafina ",
-   "price": 29.8
+   "price": 29.80
   },
   {
    "code": 150,
@@ -802,7 +802,7 @@
   {
    "code": 161,
    "article": "Pega  pestañas pelo a pelo star color 15ml",
-   "price": 4
+   "price": 4.00
   },
   {
    "code": 162,
@@ -812,7 +812,7 @@
   {
    "code": 163,
    "article": "pega azul para uñas x 12 pzas",
-   "price": 2.6
+   "price": 2.60
   },
   {
    "code": 164,
@@ -827,7 +827,7 @@
   {
    "code": 166,
    "article": "pega foil",
-   "price": 1
+   "price": 1.00
   },
   {
    "code": 167,
@@ -882,12 +882,12 @@
   {
    "code": 177,
    "article": "Pestaña Volumen Russo",
-   "price": 1.4
+   "price": 1.40
   },
   {
    "code": 178,
    "article": "Pestañas Funmix mixtas 015C",
-   "price": 1.4
+   "price": 1.40
   },
   {
    "code": 179,
@@ -922,7 +922,7 @@
   {
    "code": 185,
    "article": "Piedras Sharosky Uñas 8",
-   "price": 1
+   "price": 1.00
   },
   {
    "code": 186,
@@ -1002,7 +1002,7 @@
   {
    "code": 201,
    "article": "Pinturas valmy x 12 pzas ",
-   "price": 6.5
+   "price": 6.50
   },
   {
    "code": 202,
@@ -1052,7 +1052,7 @@
   {
    "code": 211,
    "article": "Pinza Volumen russo",
-   "price": 2
+   "price": 2.00
   },
   {
    "code": 212,
@@ -1072,12 +1072,12 @@
   {
    "code": 215,
    "article": "Plancha quita orquetillas",
-   "price": 45.5
+   "price": 45.50
   },
   {
    "code": 216,
    "article": "Planti Stiker uñas 144pzas",
-   "price": 3
+   "price": 3.00
   },
   {
    "code": 217,
@@ -1087,7 +1087,7 @@
   {
    "code": 218,
    "article": "plasmapen modelo nuevo Monster",
-   "price": 62.6
+   "price": 62.60
   },
   {
    "code": 219,
@@ -1102,7 +1102,7 @@
   {
    "code": 221,
    "article": "Polvo cola de sirena x12",
-   "price": 7.8
+   "price": 7.80
   },
   {
    "code": 222,
@@ -1142,12 +1142,12 @@
   {
    "code": 229,
    "article": "Radiofrecuencia Multipolar 2 cabezales",
-   "price": 149.5
+   "price": 149.50
   },
   {
    "code": 230,
    "article": "RADIOFRECUENCIA FACIAL PORTATIL",
-   "price": 45.5
+   "price": 45.50
   },
   {
    "code": 231,
@@ -1172,7 +1172,7 @@
   {
    "code": 235,
    "article": "Inversor de corriente 12v a 110 v  150w",
-   "price": 14.3
+   "price": 14.30
   },
   {
    "code": 236,
@@ -1182,7 +1182,7 @@
   {
    "code": 237,
    "article": "Removedor Esmalte semipermanentes",
-   "price": 2
+   "price": 2.00
   },
   {
    "code": 238,
@@ -1242,7 +1242,7 @@
   {
    "code": 249,
    "article": "Sacacomedon electrico",
-   "price": 39
+   "price": 39.00
   },
   {
    "code": 250,
@@ -1257,7 +1257,7 @@
   {
    "code": 252,
    "article": "Separador de dedos silicon",
-   "price": 1
+   "price": 1.00
   },
   {
    "code": 253,
@@ -1357,7 +1357,7 @@
   {
    "code": 272,
    "article": "Uñas por caja de 100",
-   "price": 1
+   "price": 1.00
   },
   {
    "code": 273,
@@ -1372,22 +1372,22 @@
   {
    "code": 275,
    "article": "Vapor  ozono frio caliente",
-   "price": 130
+   "price": 130.00
   },
   {
    "code": 276,
    "article": "Vapor  ozono mesa ",
-   "price": 65
+   "price": 65.00
   },
   {
    "code": 277,
    "article": "Vapor O zono con lupa ",
-   "price": 143
+   "price": 143.00
   },
   {
    "code": 278,
    "article": "Vaporizador para el rostro",
-   "price": 16.9
+   "price": 16.90
   },
   {
    "code": 279,
@@ -1397,7 +1397,7 @@
   {
    "code": 280,
    "article": "Ventilador de pestaña",
-   "price": 8.5
+   "price": 8.50
   },
   {
    "code": 281,
@@ -1412,7 +1412,7 @@
   {
    "code": 283,
    "article": "Vidrio para pega #2",
-   "price": 1.5
+   "price": 1.50
   },
   {
    "code": 284,
@@ -1442,7 +1442,7 @@
   {
    "code": 289,
    "article": "Vitamina C para el rostro",
-   "price": 4
+   "price": 4.00
   },
   {
    "code": 290,
@@ -1467,12 +1467,12 @@
   {
    "code": 294,
    "article": "Lampara  Uñas sun BQ5T  120W",
-   "price": 24.7
+   "price": 24.70
   },
   {
    "code": 295,
    "article": "Lampara sun 5 48w tornasol",
-   "price": 18.2
+   "price": 18.20
   },
   {
    "code": 296,
@@ -1482,7 +1482,7 @@
   {
    "code": 297,
    "article": "Base de goma para armar pestañas volumen russo funmix",
-   "price": 0.7
+   "price": 0.70
   },
   {
    "code": 298,
@@ -1492,7 +1492,7 @@
   {
    "code": 299,
    "article": "Dermografo princess",
-   "price": 58.5
+   "price": 58.50
   },
   {
    "code": 300,
@@ -1512,32 +1512,32 @@
   {
    "code": 303,
    "article": "Dermoabrasion Facial",
-   "price": 143
+   "price": 143.00
   },
   {
    "code": 304,
    "article": "Peine saca piojo",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 305,
    "article": "Ventilador de pestañas",
-   "price": 7.8
+   "price": 7.80
   },
   {
    "code": 306,
    "article": "Lampara Wood  lupa UV",
-   "price": 41.6
+   "price": 41.60
   },
   {
    "code": 307,
    "article": "Lampara de mesa con gancho",
-   "price": 11.7
+   "price": 11.70
   },
   {
    "code": 308,
    "article": "Tinte para pestañas",
-   "price": 11.7
+   "price": 11.70
   },
   {
    "code": 309,
@@ -1547,7 +1547,7 @@
   {
    "code": 310,
    "article": "Tapa bocas x 50 pzas ",
-   "price": 16.9
+   "price": 16.90
   },
   {
    "code": 311,
@@ -1557,27 +1557,27 @@
   {
    "code": 312,
    "article": "Radiofrecuencia 1 cabezal",
-   "price": 140.4
+   "price": 140.40
   },
   {
    "code": 313,
    "article": "HiFu portatil",
-   "price": 94.9
+   "price": 94.90
   },
   {
    "code": 314,
    "article": "HYALURONIC PEN",
-   "price": 52
+   "price": 52.00
   },
   {
    "code": 315,
    "article": "Serun Farsaly",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 316,
    "article": "Dispensador de acetona",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 317,
@@ -1607,7 +1607,7 @@
   {
    "code": 322,
    "article": "Kit depilación con cera Belfran 250g.",
-   "price": 14.3
+   "price": 14.30
   },
   {
    "code": 323,
@@ -1617,7 +1617,7 @@
   {
    "code": 324,
    "article": "Kit Dip powder 4pasos + 1 polvo",
-   "price": 7.8
+   "price": 7.80
   },
   {
    "code": 325,
@@ -1632,12 +1632,12 @@
   {
    "code": 327,
    "article": "Lampara de mesa recargable",
-   "price": 10.4
+   "price": 10.40
   },
   {
    "code": 328,
    "article": "Cera miel belfran 250gr",
-   "price": 5.2
+   "price": 5.20
   },
   {
    "code": 329,
@@ -1687,12 +1687,12 @@
   {
    "code": 338,
    "article": "Kit repujador tornasol+cortacuticula",
-   "price": 10.4
+   "price": 10.40
   },
   {
    "code": 339,
    "article": "Sacacomedon Acero pqt 12",
-   "price": 7.8
+   "price": 7.80
   },
   {
    "code": 340,
@@ -1722,7 +1722,7 @@
   {
    "code": 345,
    "article": "Molde de uñas Venus x 50pza",
-   "price": 1.3
+   "price": 1.30
   },
   {
    "code": 346,
@@ -1737,7 +1737,7 @@
   {
    "code": 348,
    "article": "Licuadora Recargable 380ml",
-   "price": 14.3
+   "price": 14.30
   },
   {
    "code": 349,
@@ -1777,12 +1777,12 @@
   {
    "code": 356,
    "article": "Set de brochas Maquillaje",
-   "price": 7.8
+   "price": 7.80
   },
   {
    "code": 357,
    "article": "Kit inicio semipermanentes ",
-   "price": 9.1
+   "price": 9.10
   },
   {
    "code": 358,
@@ -1797,7 +1797,7 @@
   {
    "code": 360,
    "article": "Pestañas Nagaraku mixtas 015c y 015D",
-   "price": 1.8199999999999998
+   "price": 1.81
   }
  ];
 
@@ -1810,6 +1810,7 @@ const cardCountElem = document.getElementById("card-count");
 const cardTotalElem = document.getElementById("card-total");
 const loader = document.getElementById("loader");
 const inputr = document.getElementById("myInput");
+const res = document.getElementById("res");
 
 
 const cardLimit = invent.length;
@@ -1842,6 +1843,8 @@ const getRandomColor = () => {
 
 const createCard = (index) => {
 
+  
+
   const card = document.createElement("div");
   const ima = document.createElement("img");
   const titu = document.createElement("h3");
@@ -1860,6 +1863,7 @@ const createCard = (index) => {
 
   card.className = "w3-quarter";
   ima.src = `\THUMBNAILS\\${index}.jpg`;
+  ima.loading="lazy";
   ima.classList.add("img-art");
   card.style.backgroundColor = getRandomColor();
 
@@ -1928,7 +1932,7 @@ const removeInfiniteScroll = () => {
 window.onload = function () {
   addCards(currentPage);
   inputr.focus();
-  //alert("hola");
+  res.innerHTML=invent.length+" artículos disponibles";
 };
 
 window.addEventListener("scroll", handleInfiniteScroll);
@@ -1986,11 +1990,10 @@ function removeElements() {
 
     removeElements();
     loader.remove();
-    let no = document.getElementById("no");
-    if(no !== null)
-    {
-        no.remove();
-    }
+    
+    
+    res.innerHTML=invent.length+" artículos disponibles";
+    
     
     
     let items = document.querySelectorAll(".w3-quarter");
@@ -2043,20 +2046,26 @@ function removeElements() {
 
 
 
+      
 
+    var inv=[];
+  
 
-    
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < invent.length; i++) 
     {
       h3 = invent[i];
+      
       if (h3) {
         txtValue = h3.article;
         txtValue = txtValue.toLowerCase();
         txtValue = removeAccents(txtValue);
         if (txtValue.indexOf(filter1) > -1 && txtValue.indexOf(filter2) > -1 && txtValue.indexOf(filter3) > -1 && txtValue.indexOf(filter4) > -1) {
           
+          inv.push(invent[i]);
+          
           createCard(i+1);
+
 
 
 
@@ -2086,14 +2095,18 @@ function removeElements() {
       }
     }
 
-      if(filter === "")
-      {      
-        removeElements();
-      }
+        //console.log(inv);
 
-    let cartas = document.querySelectorAll(".w3-quarter");
-    if(cartas.length == 0){
-      cardContainer.innerHTML = "<h2 id='no'>No se encontraron resultados de la búsqueda '"+filter+"'</h2>";
+     
+       // res.innerHTML = "";
+
+    
+    if(inv.length === 0){
+      res.innerHTML = "<span style='color:red'>No se encontraron resultados</span>";
+    }
+    else
+    {
+      res.innerHTML = "<strong>Resultados:</strong> "+inv.length;
     }
     
 
