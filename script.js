@@ -1,4 +1,4 @@
-const invent = [
+var invent = [
   {
    "code": 1,
    "article": "Aceite para Cutícula",
@@ -1811,11 +1811,15 @@ const cardTotalElem = document.getElementById("card-total");
 const loader = document.getElementById("loader");
 const inputr = document.getElementById("myInput");
 const res = document.getElementById("res");
+var bus = document.getElementById("bus");
+
+var invento;
 
 
-const cardLimit = invent.length;
+
+var cardLimit = invent.length;
 const cardIncrease = 8;
-const pageCount = Math.ceil(cardLimit / cardIncrease);
+var pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
 
 cardTotalElem.innerHTML = cardLimit;
@@ -1842,27 +1846,37 @@ const getRandomColor = () => {
 };
 
 const createCard = (index) => {
+try
+{
 
-  
+  if(bus.value !== "")
+{
+invento = JSON.parse(bus.value);
+}
+else
+{
+  invento = invent;
+}
+
 
   const card = document.createElement("div");
   const ima = document.createElement("img");
   const titu = document.createElement("h3");
   const btwa = document.createElement("button");
 
-  const titul = invent[index-1].article;
+  const titul = invento[index-1].article;
   titu.innerHTML = "<strong>" + titul + "</strong>";
 
   const cod = document.createElement("h6");
-  const codi = invent[index-1].code;
+  const codi = invento[index-1].code;
   cod.innerHTML = "<strong>Código: </strong>" + codi;
 
   const pric = document.createElement("h4");
-  const price = invent[index-1].price;
+  const price = invento[index-1].price;
   pric.innerHTML = "<strong>Precio: </strong>$ " + price;
 
   card.className = "w3-quarter";
-  ima.src = `\THUMBNAILS\\${index}.jpg`;
+  ima.src = `\THUMBNAILS\\${codi}.jpg`;
   ima.loading="lazy";
   ima.classList.add("img-art");
   card.style.backgroundColor = getRandomColor();
@@ -1878,14 +1892,35 @@ const createCard = (index) => {
   card.appendChild(btwa);
 
   cardContainer.appendChild(card);
+
+  }
+  catch
+  {
+
+  }
 };
 
+
+
 const addCards = (pageIndex) => {
+
+//////////
+if(bus.value !== "")
+{
+invento = JSON.parse(bus.value);
+}
+else
+{
+  invento = invent;
+}
+cardLimit=invento.length;
+pageCount = Math.ceil(cardLimit / cardIncrease);
+////////
+
   currentPage = pageIndex;
 
-  const startRange = (pageIndex - 1) * cardIncrease;
-  const endRange =
-    currentPage == pageCount ? cardLimit : pageIndex * cardIncrease;
+  var startRange = (pageIndex - 1) * cardIncrease;
+  var endRange = currentPage == pageCount ? cardLimit : pageIndex * cardIncrease;
 
   cardCountElem.innerHTML = endRange;
 
@@ -1894,8 +1929,30 @@ const addCards = (pageIndex) => {
   }
 };
 
+
+
+
 const handleInfiniteScroll = () => {
   throttle(() => {
+
+    if(res.innerHTML == '<span style="color:red">No se encontraron resultados</span>')
+    {
+      return;
+    }
+
+    //////////
+if(bus.value !== "")
+{
+invento = JSON.parse(bus.value);
+}
+else
+{
+  invento = invent;
+}
+cardLimit=invento.length;
+pageCount = Math.ceil(cardLimit / cardIncrease);
+////////
+
     //const endOfPage =
     //  window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
 
@@ -1905,23 +1962,31 @@ const handleInfiniteScroll = () => {
 
     var endOfPage = Math.ceil(scrolled) >= scrollable;
 
-    //<stop when searching>
+    /*/<stop when searching>
     let inp = document.getElementById('myInput').value;
 
     if(inp !== ""){
      endOfPage = false;
     }
-    //</stop when searching>
+    //</stop when searching>*/
+
+    console.log(endOfPage);
 
     if (endOfPage) {
       addCards(currentPage + 1);
     }
 
-    if (currentPage === pageCount) {
+    
+    
+   /* if (currentPage === pageCount) {
       removeInfiniteScroll();
-    }
+    } */
+    
   }, 500);
 };
+
+
+
 
 const removeInfiniteScroll = () => {
   loader.remove();
@@ -1930,7 +1995,7 @@ const removeInfiniteScroll = () => {
 };
 
 window.onload = function () {
-  addCards(currentPage);
+  addCards(1);
   inputr.focus();
   res.innerHTML=invent.length+" artículos disponibles";
 };
@@ -1972,6 +2037,8 @@ function removeElements() {
   // live search
 
   function clearInput(event){
+    window.addEventListener("scroll", handleInfiniteScroll);
+
     let entrada = document.getElementById("myInput");
     entrada.value="";
     myFunction2(event);
@@ -1983,6 +2050,9 @@ function removeElements() {
 
   
   function myFunction2(event) {
+
+    
+    bus.value = "";
 
     if(event.key !== "enter"){
       showList();
@@ -2018,7 +2088,8 @@ function removeElements() {
     filter = input.value.toLowerCase();
     filter = removeAccents(filter);
 
-    if(filter === ""){      
+    if(filter === "")
+    {      
       addCards(1);
       return;
     }
@@ -2062,9 +2133,10 @@ function removeElements() {
         txtValue = removeAccents(txtValue);
         if (txtValue.indexOf(filter1) > -1 && txtValue.indexOf(filter2) > -1 && txtValue.indexOf(filter3) > -1 && txtValue.indexOf(filter4) > -1) {
           
-          inv.push(invent[i]);
+        inv.push(invent[i]);
           
-          createCard(i+1);
+        //createCard(i+1);
+         
 
 
 
@@ -2099,17 +2171,21 @@ function removeElements() {
 
      
        // res.innerHTML = "";
+       
 
-    
-    if(inv.length === 0){
-      res.innerHTML = "<span style='color:red'>No se encontraron resultados</span>";
-    }
-    else
-    {
+       if(inv.length>0)
+       {
+      bus.value = JSON.stringify(inv);
+      addCards(1);
       res.innerHTML = "<strong>Resultados:</strong> "+inv.length;
-    }
+      //console.log(JSON.parse(bus.value));
+       }
+       else
+       {    
+      res.innerHTML = "<span style='color:red'>No se encontraron resultados</span>";
+      
+        }
     
-
 
   }
 
