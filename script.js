@@ -2235,6 +2235,6 @@ inputr.addEventListener("keyup", function(event) {
     // Trigger the button element with a click
     let lista = document.getElementById("lista");
     lista.style.display="none";
-    
+    inputr.blur();
   }
 });
