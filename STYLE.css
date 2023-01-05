@@ -83,7 +83,10 @@ h5{
 
 .img-art
 {
-   width:90%
+   border-radius: 10px;
+   width:90%;  
+   box-shadow: 7px 7px 10px #999;
+   z-index:100;
 }
 
 #main-header {
