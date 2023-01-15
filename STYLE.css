@@ -40,10 +40,35 @@ background: white;}
   height: 25px;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+.lint{
+  background-color: #87CEEB;
+  border-color: white;
+  
+}
+
+td{
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+th{
+  background-color: #009688;
+  color: white;
+  padding-right: 3px;
+  padding-left: 3px;  
+}
+
+
 .btwa{
 	display: inline-block;
 	font-weight: 400;
-	color: #212529;
 	text-align: center;
 	border: 1px solid transparent;
 	padding: .375rem .75rem;
@@ -52,6 +77,25 @@ background: white;}
 	border-radius: .25rem;
 	color: #fff;
 	background-color: #007bff;
+}
+
+.bCart{
+  margin-top: 3px;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #107e3ae1;
+}
+
+.bCart:hover{
+  background-color: #0e6926;
+  cursor: pointer;
 }
 
 
@@ -87,6 +131,7 @@ h5{
    width:90%;  
    box-shadow: 7px 7px 10px #999;
    z-index:100;
+   transition: all 200ms ease-in-out;
 }
 
 #main-header {
@@ -402,7 +447,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   
   .skeleton-card {
     height: 55vh;
-    width: calc((100% / 3) - 16px);
+    width: calc((100% / 4) - 16px);
     margin: 8px;
     border-radius: 3px;
     transition: all 200ms ease-in-out;
