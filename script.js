@@ -2328,16 +2328,16 @@ if(cu==undefined)
     for(let i =0;i<linea.length;i++)
     {
       let dato = linea[i].getElementsByTagName("td");
-      pedido+="%0D%0A";
+      pedido+="\r\n";
       pedido+="Cod: ";
       pedido+=dato[0].innerText;
-      pedido+="%0D%0A";
+      pedido+="\r\n";
       pedido+=dato[1].innerText;
       pedido+=" Cant.: ";
       let tds = dato[3].getElementsByTagName("input");
-      pedido+="%0D%0A";
+      pedido+="\r\n";
       pedido+=tds[0].value;
-      pedido+="%0D%0A";
+      pedido+="\r\n";
     }
     const total = document.getElementById("tot");
     pedido+="total "+total.innerText;
