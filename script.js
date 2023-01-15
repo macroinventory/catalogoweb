@@ -2333,6 +2333,7 @@ if(cu==undefined)
       pedido+=dato[0].innerText;
       pedido+="\r\n";
       pedido+=dato[1].innerText;
+      pedido+="\r\n";
       pedido+=" Cant.: ";
       let tds = dato[3].getElementsByTagName("input");
       pedido+="\r\n";
