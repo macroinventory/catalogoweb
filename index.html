@@ -9,7 +9,7 @@
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-  h3 {color: #0000aa}
+  h3 {color: #0000aa; padding-right: 20px;}
 .w3-bar-block .w3-bar-item {padding:20px}
 /*ul{text-align: left;}*/
 .itemFeatures{text-align: left}
@@ -44,6 +44,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
  -->
 <input type="hidden" id="bus">
+<input type="hidden" id="total">
 
 <!-- !PAGE CONTENT! -->
 
@@ -55,6 +56,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <div class="w3-top">  
 <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">-->
 <a class="w3-button w3-padding-16 " onclick="w3_open()" style="color: blue;"><h5><b>&#9776</b></h5></a>
+<a class="w3-button"  onclick="openCart()" ><img src="FOTOS\cart.svg" style="height:30px;padding-top: 5px;padding-bottom: 0px;padding-right: 10px;"></a>
+
 <h6 id="res"></h6>
 </div>
 
@@ -66,11 +69,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </div>
 
 <div>
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="myCart">
+<a onclick="closeCart()" class="w3-bar-item w3-button">Cerrar carrito</a>
+<table>
+  <tbody id="mytab">
+    <th>Cod</th><th style="width: fit-content;">Artículo</th><th>Precio</th><th>Cant.</th><th>Total</th><th>Borrar</th>
+      
+  </tbody>
+</table>
+<p id="ped"></p>
+<h3 style="color: black;"><strong>Total: </strong><span id="tot" style="color: green;">0</span> $</h3>
+<a onclick="sendRequest()" class="w3-bar-item w3-button">Enviar pedido a Whatsapp</a>
+</nav>
+</div>
+
+
+<div>
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
 <a onclick="w3_close()" class="w3-bar-item w3-button">Cerrar menú</a>
 <!--<a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Productos</a>
   href="javascript:void(0)"-->
-<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Conozcanos por whatsapp 0416 1229108</a>
+<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">whatsapp 0416 1229108</a>
+</nav>
 </div>
 
 <ul class="list" id="lista"></ul>
