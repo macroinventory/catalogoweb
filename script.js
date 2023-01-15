@@ -1863,7 +1863,13 @@ else
   const ima = document.createElement("img");
   const titu = document.createElement("h3");
   const btwa = document.createElement("button");
+  const bCart = document.createElement("button");
 
+  
+
+  card.id= invento[index-1].code;
+
+  
   const titul = invento[index-1].article;
   titu.innerHTML = "<strong>" + titul + "</strong>";
 
@@ -1876,21 +1882,27 @@ else
   pric.innerHTML = "<strong>Precio: </strong>$ " + price;
 
   card.className = "w3-quarter";
-  ima.src = `\THUMBNAILS\\${codi}.jpg`;
-  ima.loading="lazy";
+  ima.src = `THUMBNAILS\\${codi}.jpg`;
+  ima.loading="eager";
   ima.classList.add("img-art");
   card.style.backgroundColor = getRandomColor();
 
   btwa.innerHTML = "Consulte en Whatsapp <img src='FOTOS\\waSVG.svg' class='wai'>";
   btwa.classList.add("btwa");
   btwa.setAttribute("onclick", "askWa("+codi+")");
+
+  bCart.innerHTML = "<span id='b"+codi+"'>Añadir al carrito </span><img src='FOTOS\\cart.svg' class='wai' style='margin-left:3px'>";
+  bCart.classList.add("bCart");
+  bCart.setAttribute("onclick", "addCart("+codi+")");
+
   
   card.appendChild(ima);
   card.appendChild(cod);
   card.appendChild(titu); 
   card.appendChild(pric); 
   card.appendChild(btwa);
-
+  card.appendChild(bCart);
+  
   cardContainer.appendChild(card);
 
   }
@@ -2236,5 +2248,105 @@ inputr.addEventListener("keyup", function(event) {
     let lista = document.getElementById("lista");
     lista.style.display="none";
     inputr.blur();
+    
   }
 });
+
+function openCart()
+{
+  document.getElementById("myCart").style.display = "block";
+}
+
+function closeCart()
+{
+  document.getElementById("myCart").style.display = "none";
+}
+
+let total = document.getElementById("tot").innerHTML;
+
+function addCart(cod){
+  let art = invent[cod-1].article;
+  var pre = invent[cod-1].price.toString();
+  pre = parseFloat(pre.replace(",","."));
+  let mycart = document.getElementById("ped");
+  //mycart.innerHTML+="cod: "+cod+" "+art+"<br>"
+
+  let total = parseFloat(document.getElementById("tot").innerHTML);
+  total+=pre;
+  
+  const tar = document.getElementById(cod);
+//let cu =tar.getElementsByTagName("tr");
+//let boton =document.getElementById("b"+cod);
+let table = document.getElementById("mytab");
+let tr = document.createElement("tr");
+tr.id="tr"+cod;
+tr.className="lint";
+tr.innerHTML="<td>"+cod+"</td><td>"+art+"</td><td style='text-Align:right'>"+pre+"</td><td><input type='number' min=0 value=1 onchange='calcular(this.value, this)' onKeyUp='calcular(this.value, this)' data-precio='"+pre+"' data-tid='t"+cod+"' style='width:65px'></td><td class='totalr' id='t"+cod+"' style='text-Align:right'>"+pre+"</td><td style='text-align:center'><a style='color:red;cursor:pointer' onclick='delArt(tr"+cod+")'>X</a></td>"
+let cu =document.getElementById("tr"+cod);
+
+if(cu==undefined)
+{
+  table.appendChild(tr);
+  calct();
+  }
+  
+  }
+
+  function calcular(valor, prec)
+  {
+    if(valor=="")
+    {valor=0}
+
+    const total =document.getElementById(prec.dataset.tid)
+    total.innerHTML=(valor*parseFloat(prec.dataset.precio)).toFixed(2);
+    calct();
+
+  }
+
+  function calct()
+  {
+    var cuenta=0;
+    let totales = document.getElementsByClassName("totalr");
+    for(let i=0; i<totales.length; i++)
+    {
+    cuenta+=parseFloat(totales[i].innerHTML);
+    }
+    document.getElementById("tot").innerHTML=cuenta.toFixed(2);
+  }
+
+  function delArt(trr)
+  {
+    
+    trr.remove();
+    calct();
+  }
+
+  function sendRequest()
+  {
+    var pedido ="Pedido";
+    const linea = document.getElementsByClassName("lint");
+    for(let i =0;i<linea.length;i++)
+    {
+      let dato = linea[i].getElementsByTagName("td");
+      pedido+="%0D%0A";
+      pedido+="Cod: ";
+      pedido+=dato[0].innerText;
+      pedido+="%0D%0A";
+      pedido+=dato[1].innerText;
+      pedido+=" Cant.: ";
+      let tds = dato[3].getElementsByTagName("input");
+      pedido+="%0D%0A";
+      pedido+=tds[0].value;
+      pedido+="%0D%0A";
+    }
+    const total = document.getElementById("tot");
+    pedido+="total "+total.innerText;
+
+    pedido=encodeURI(pedido);
+    
+    window.open("https://api.whatsapp.com/send?phone=+584161229108&text="+pedido);
+  
+
+    closeCart();
+  }
+  
