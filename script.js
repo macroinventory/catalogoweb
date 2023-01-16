@@ -2323,7 +2323,7 @@ if(cu==undefined)
 
   function sendRequest()
   {
-    var pedido ="Pedido";
+    var pedido ="*PEDIDO*\r\n";
     const linea = document.getElementsByClassName("lint");
     for(let i =0;i<linea.length;i++)
     {
@@ -2341,9 +2341,10 @@ if(cu==undefined)
       pedido+="\r\n";
     }
     const total = document.getElementById("tot");
-    pedido+="total "+total.innerText;
+    pedido+="\r\n*TOTAL:* "+total.innerText+"$";
 
     pedido=encodeURI(pedido);
+    
     
     window.open("https://api.whatsapp.com/send?phone=+584161229108&text="+pedido);
   
