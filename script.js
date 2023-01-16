@@ -2336,7 +2336,6 @@ if(cu==undefined)
       pedido+="\r\n";
       pedido+=" Cant.: ";
       let tds = dato[3].getElementsByTagName("input");
-      pedido+="\r\n";
       pedido+=tds[0].value;
       pedido+="\r\n";
     }
