@@ -2329,12 +2329,12 @@ if(cu==undefined)
     {
       let dato = linea[i].getElementsByTagName("td");
       pedido+="\r\n";
-      pedido+="Cod: ";
+      pedido+="*Código:* ";
       pedido+=dato[0].innerText;
       pedido+="\r\n";
       pedido+=dato[1].innerText;
       pedido+="\r\n";
-      pedido+=" Cant.: ";
+      pedido+="*Cantidad:* ";
       let tds = dato[3].getElementsByTagName("input");
       pedido+=tds[0].value;
       pedido+="\r\n";
