@@ -2334,13 +2334,19 @@ if(cu==undefined)
       pedido+="\r\n";
       pedido+=dato[1].innerText;
       pedido+="\r\n";
+      pedido+="*Precio Unidad:* ";
+      pedido+=dato[2].innerText;
+      pedido+="\r\n";
       pedido+="*Cantidad:* ";
       let tds = dato[3].getElementsByTagName("input");
       pedido+=tds[0].value;
       pedido+="\r\n";
+      pedido+="*Total:* ";
+      pedido+=dato[4].innerText;
+      pedido+="\r\n";
     }
     const total = document.getElementById("tot");
-    pedido+="\r\n*TOTAL:* "+total.innerText+"$";
+    pedido+="\r\n*TOTAL GENERAL:* "+total.innerText+"$";
 
     pedido=encodeURI(pedido);
     
